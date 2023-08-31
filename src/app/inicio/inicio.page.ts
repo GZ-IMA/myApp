@@ -19,11 +19,11 @@ export class InicioPage implements OnInit {
   }>;
   //
 //
-  entradaActual: {
+  entradaActual!: {
     fecha: string;
     fechaTexto: string;
     texto: string;
-  } | undefined;
+  }
 
   constructor(public toastController: ToastController) { 
     moment.locale('es-mx');
